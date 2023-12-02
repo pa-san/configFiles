@@ -38,9 +38,9 @@ set shiftwidth=0								" タブの設定(タブ幅4の場合)
 set softtabstop=2
 set tabstop=2
 
-set hlsearch									 " 検索結果をハイライト
-set incsearch									 " 最初の一文字を入力した時点から検索開始
-set wrapscan									 " ファイル末尾に到達すると再び先頭から検索
+set hlsearch										" 検索結果をハイライト
+set incsearch										" 最初の一文字を入力した時点から検索開始
+set wrapscan										" ファイル末尾に到達すると再び先頭から検索
 set ruler
 
 "######################################
@@ -52,11 +52,9 @@ inoremap <silent> jj <ESC>
 
 "v,vキー矩形選択モード
 nnoremap <silent> vv <c-v>
-"
+"shift+Uキーでリドゥ
+nnoremap <silent> U <c-r>
+nnoremap <silent> <c-a> ggVGy
 
-
-
-
-
-
-
+"CTRL+cでヤンク(コピー)する
+vnoremap <silent> <c-c> y
