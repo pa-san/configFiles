@@ -54,7 +54,11 @@ inoremap <silent> jj <ESC>
 nnoremap <silent> vv <c-v>
 "shift+Uキーでリドゥ
 nnoremap <silent> U <c-r>
+"CTRL+aで全選択＆ヤンク(コピー)
 nnoremap <silent> <c-a> ggVGy
 
 "CTRL+cでヤンク(コピー)する
 vnoremap <silent> <c-c> y
+"CTRL+aで選択範囲にペーストする
+vnoremap <silent> <c-v> p
+
